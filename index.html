@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PRG 1</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+
+<div id="loginPage" class="container">
+
+<h1>PRG 1</h1>
+
+<p>Sistem Manajemen Barang</p>
+
+<input type="text" id="username" placeholder="Username">
+
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Masuk</button>
+
+</div>
+
+
+
+<div id="dashboard" style="display:none;">
+
+<header>
+
+<h1>PRG 1</h1>
+
+<button onclick="logout()">Logout</button>
+
+</header>
+
+
+
+<div class="cards">
+
+<div class="card">
+
+<h3>Total Jenis Barang</h3>
+
+<p id="jenisBarang">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Total Masuk</h3>
+
+<p id="totalMasuk">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Total Keluar</h3>
+
+<p id="totalKeluar">0</p>
+
+</div>
+
+<div class="card">
+
+<h3>Total Stok</h3>
+
+<p id="totalStok">0</p>
+
+</div>
+
+</div>
+
+
+
+<section>
+
+<h2>Input Transaksi</h2>
+
+<input id="namaBarang"
+
+placeholder="Nama Barang">
+
+<input id="jumlahBarang"
+
+type="number"
+
+placeholder="Jumlah">
+
+<select id="jenisTransaksi">
+
+<option>Masuk</option>
+
+<option>Keluar</option>
+
+</select>
+
+<button onclick="tambahData()">
+
+Simpan
+
+</button>
+
+</section>
+
+
+
+<section>
+
+<h2>Cari Barang</h2>
+
+<input id="cariBarang"
+
+placeholder="Cari Barang">
+
+<button onclick="cariBarang()">
+
+Cari
+
+</button>
+
+<div id="hasilCari"></div>
+
+</section>
+
+
+
+<section>
+
+<h2>Riwayat Transaksi</h2>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Tanggal</th>
+
+<th>Barang</th>
+
+<th>Jenis</th>
+
+<th>Jumlah</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tabelData"></tbody>
+
+</table>
+
+</section>
+
+<footer>
+
+© 2026 PRG 1 - by grz
+
+</footer>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
